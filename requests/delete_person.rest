@@ -1,13 +1,13 @@
-DELETE http://localhost:3001/api/notes/1
+DELETE http://localhost:3001/api/persons/1
 
 ###
 
-DELETE http://localhost:3001/api/notes/2
+DELETE http://localhost:3001/api/persons/2
 
 ###
 
-DELETE http://localhost:3001/api/notes/3
+DELETE http://localhost:3001/api/persons/3
 
 ###
 
-DELETE http://localhost:3001/api/notes/4
+DELETE http://localhost:3001/api/persons/4

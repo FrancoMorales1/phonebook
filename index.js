@@ -41,7 +41,7 @@ const unknownEndpoint = (request, response) => {
 }
 
 app.get('/', (request, response) => {
-    response.send("index.html")
+    response.send('./index.html')
 })
 
 app.get('/info', (request, response) => {
@@ -65,8 +65,9 @@ app.get('/api/persons/:id', (request, response) => {
 
 app.delete('/api/persons/:id', (request, response) => {
     const id = Number(request.params.id)
-    persons = persons.filter((person) => person.id !== id)
-    response.status(204).end()
+    const person = persons.find(x => x.id === id)
+    persons = persons.filter(x => x.id !== id)
+    response.status(200).json(person)
 })
 
 app.post('/api/persons', (request, response) => {
