@@ -10,6 +10,7 @@ morgan.token('body', (req) => {
 
 app.use(cors())
 app.use(express.json())
+app.use(express.static('build'))
 app.use(morgan(':method :url :response-time :body'))
 
 let persons = [
@@ -40,7 +41,7 @@ const unknownEndpoint = (request, response) => {
 }
 
 app.get('/', (request, response) => {
-    response.send('<h1>Hello World</h1>')
+    response.send("index.html")
 })
 
 app.get('/info', (request, response) => {

@@ -1,0 +1,37 @@
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Franco Morales",
+    "phone": "549223456789"
+}
+
+###
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Juan Martin Nievas",
+    "phone": "549223789123"
+}
+
+###
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Mariana Goroso",
+    "phone": "549223123123"
+}
+
+###
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Pablo Jose Morales",
+    "phone": "549223963852"
+}
