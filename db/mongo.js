@@ -1,7 +1,6 @@
 const mongoose = require('mongoose')
-const process = require('node:process')
 
-const connectionString = process.env.MONGO_DB_URI
+const connectionString = 'mongodb+srv://fullstack:fullstack@cluster0.1myvcm0.mongodb.net/franbd?retryWrites=true&w=majority&appName=Cluster0'
 
 mongoose
     .connect(connectionString)
